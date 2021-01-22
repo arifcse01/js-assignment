@@ -18,6 +18,7 @@ var result = kilometerToMeter(12);
 
 
 
+
 // Program for budgetCalculator
 
 function budgetCalculator(watch, phone, laptop){
@@ -63,7 +64,7 @@ function hotelCost(days){
     return cost;
 }
 
-var totalCost = hotelCost(25);
+var totalCost = hotelCost(28);
 
 
 
@@ -76,7 +77,7 @@ function megaFriend(array){
     for(var i = 0; i < array.length; i++){        
         var element = array[i].length;
         if(element == []){
-            return "Invalid Array";
+            return "Array is Empty";
         } 
         else if(element > max.length ) {
             max = array[i];
@@ -86,6 +87,6 @@ function megaFriend(array){
        
 }
 
-var outcome = megaFriend(['Rimon Biswas', 'Rano Kumar Nath', 'Mohammed Shahjahan', 'Shafiqul Islam']);
+var outcome = megaFriend(['Rimon Biswas', 'Rano Kanti Nath', 'Rano Kumar Nath', 'Mohammed Shahjahan', 'Shafiqul Islam']);
 
     
