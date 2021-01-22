@@ -1,10 +1,11 @@
+// https://github.com/arifcse01/js-assignment.git
 
 
 // Program for convert kilometer to meter
 
 function kilometerToMeter(kilometer){
-
     var meter = kilometer * 1000;
+
     if(meter > 0){
         return meter;
     }
@@ -12,20 +13,26 @@ function kilometerToMeter(kilometer){
         return "Invalid Number";
     }
 }
+
 var result = kilometerToMeter(12);
-console.log(result);
+
 
 
 // Program for budgetCalculator
 
 function budgetCalculator(watch, phone, laptop){
-
     var total = watch * 50 + phone * 100 + laptop * 500;
-    return total;
+
+    if(watch >= 0 && phone >= 0 && laptop >= 0){
+        return total;
+    }
+    else{
+        return "Invalid Budget";
+    }    
 }
 
-var budget = budgetCalculator(8, 10, 5);
-console.log(budget);
+var budget = budgetCalculator(8, 5, 5);
+
 
 
 
@@ -57,7 +64,7 @@ function hotelCost(days){
 }
 
 var totalCost = hotelCost(25);
-console.log(totalCost);
+
 
 
 
@@ -72,8 +79,8 @@ function megaFriend(array){
             max = array[i];
         }                           
     }
-
     return max;    
 }
-    var outcome = megaFriend(['Kamal Uddin', 'Abul Bashar', 'Jamal uddin', 'abdul kashem', 'Arifur Rahman Arif']);
-    console.log(outcome);
+
+var outcome = megaFriend(['Kamal Uddin', 'Abul Bashar', 'Jamal uddin', 'abdul kashem', 'Arifur Rahman']);
+    
