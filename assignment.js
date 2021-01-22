@@ -75,12 +75,17 @@ function megaFriend(array){
 
     for(var i = 0; i < array.length; i++){        
         var element = array[i].length;
-        if(element > max.length){
+        if(element == []){
+            return "Invalid Array";
+        } 
+        else if(element > max.length ) {
             max = array[i];
-        }                           
-    }
-    return max;    
+        }                             
+    }   
+    return max;  
+       
 }
 
-var outcome = megaFriend(['Kamal Uddin', 'Abul Bashar', 'Jamal uddin', 'abdul kashem', 'Arifur Rahman']);
+var outcome = megaFriend(['Rimon Biswas', 'Rano Kumar Nath', 'Mohammed Shahjahan', 'Shafiqul Islam']);
+
     
